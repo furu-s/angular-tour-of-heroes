@@ -1,6 +1,8 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms'; // for ngModel
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { inMemoryDataService } from './in-memory-data.service';
 
 import {AppComponent} from './app.component';
 import {HeroesComponent} from './heroes/heroes.component';
@@ -15,7 +17,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
         HeroesComponent,
         HeroDetailComponent,
         MessagesComponent,
-        DashboardComponent
+        DashboardComponent,
     ],
     imports: [
         BrowserModule,
